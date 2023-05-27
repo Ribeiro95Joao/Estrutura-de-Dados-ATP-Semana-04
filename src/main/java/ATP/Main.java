@@ -5,6 +5,8 @@ public class Main {
     public static void main(String[] args) {
         Lista l = new Lista();
 
+        System.out.println(l.isVazia());
+        l.listar();
         l.adicionarUltimo();
         l.adicionarUltimo();
         l.adicionarUltimo();
@@ -16,6 +18,7 @@ public class Main {
         l.listar();
         l.removeFinal();
         l.removeInicio();
+        l.listar();
         l.pesquisar();
         l.listar();
         System.out.println(l.isVazia());

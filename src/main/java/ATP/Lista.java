@@ -11,7 +11,7 @@ public class Lista {
         Elemento aux = primeiro;
         Elemento ant = primeiro;
         if (qtd == 0){
-            System.out.print("Lista vazia!!");
+            System.out.println("Lista vazia!!");
         }else {
             while (aux.getProximo() != null) {
                 ant = aux;
@@ -26,7 +26,7 @@ public class Lista {
     public void removeInicio(){
         //Método para remover o primeiro elemento da lista
         if (qtd == 0){
-            System.out.print("Lista vazia!!");
+            System.out.println("Lista vazia!!");
         }else{
             primeiro = primeiro.getProximo();
             qtd--;
@@ -44,7 +44,7 @@ public class Lista {
         if(aux == null){
             System.out.println("Elemento não encontrado.");
         }else{
-            System.out.print("Elemento encontrado: " + aux.getNum());
+            System.out.println("Elemento encontrado: " + aux.getNum());
         }
     }
 
@@ -52,7 +52,7 @@ public class Lista {
         //Método para listar os elementos da lista
         Elemento aux = primeiro;
         if(aux == null){
-            System.out.print("Lista vazia!!");
+            System.out.println("Lista vazia!!");
         }else{
             while(aux != null){
                 System.out.print(aux.getNum() + ", ");
