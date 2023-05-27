@@ -10,12 +10,15 @@ public class Main {
         l.adicionarUltimo();
         l.adicionarUltimo();
         l.adicionarUltimo();
+        l.listar();
         l.adicionarPrimeiro();
         l.adicionarPrimeiro();
+        l.listar();
         l.removeFinal();
         l.removeInicio();
+        l.pesquisar();
         l.listar();
-        l.isVazia();
+        System.out.println(l.isVazia());
 
 
     }

@@ -5,7 +5,7 @@ public class Lista {
     public Elemento ultimo;
     public int qtd = 0;
     public static Scanner teclado = new Scanner(System.in);
-    
+
     public void removeFinal(){
         //Método para remover o último elemento da lista
         Elemento aux = primeiro;
@@ -35,14 +35,14 @@ public class Lista {
 
     public void pesquisar(){
         //Método para procurar elementos na lista
-        System.out.print("Qual elemento você deseja encontrar?");
+        System.out.println("Qual elemento você deseja encontrar?");
         int numero = teclado.nextInt();
         Elemento aux = primeiro;
         while(aux != null && aux.getNum() != numero){
             aux = aux.getProximo();
         }
         if(aux == null){
-            System.out.print("Elemento não encontrado.");
+            System.out.println("Elemento não encontrado.");
         }else{
             System.out.print("Elemento encontrado: " + aux.getNum());
         }
